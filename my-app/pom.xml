@@ -25,6 +25,48 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- use the JAXB shipped in Java 8 -->
+    <dependency>
+      <groupId>org.docx4j</groupId>
+      <artifactId>docx4j-JAXB-Internal</artifactId>
+      <version>8.0.0</version>
+    </dependency>
+    <!-- use the JAXB Reference Implementation -->
+    <dependency>
+      <groupId>org.docx4j</groupId>
+      <artifactId>docx4j-JAXB-ReferenceImpl</artifactId>
+      <version>8.0.0</version>
+    </dependency>
+    <!-- use the MOXy JAXB implementation -->
+    <dependency>
+      <groupId>org.docx4j</groupId>
+      <artifactId>docx4j-JAXB-MOXy</artifactId>
+      <version>8.0.0</version>
+    </dependency>
+    <!-- 
+      To do anything with docx4j, you need slf4j on your classpath. As the slf4j website puts it:
+        The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction
+        for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the
+        end user to plug in the desired logging framework at deployment time.
+      So you need the slf4j api jar on your classpath:
+    -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+    <!-- If you want to use log4j, then include it, and slf4j-log4j12: -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.5</version>
+    </dependency>
   </dependencies>
 
   <build>
