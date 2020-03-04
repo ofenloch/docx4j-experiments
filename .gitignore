@@ -1,2 +1,6 @@
 my-app/target/
+.settings/
+.classpath
+.project
+
 
