@@ -34,6 +34,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 obama@teben:~/tmp/gitplayground$ 
 ```
 
+If You want to `push` your commits Git tells you that You can't do that:
+
 ```bash
 obama@teben:~/tmp/gitplayground$ git push
 fatal: The current branch 1.1-SNAPSHOT has no upstream branch.
@@ -43,6 +45,8 @@ To push the current branch and set the remote as upstream, use
 
 obama@teben:~/tmp/gitplayground$ 
 ```
+
+You have to set the remote `upstream`:
 
 ```bash
 obama@teben:~/tmp/gitplayground$ git push --set-upstream origin 1.1-SNAPSHOT
@@ -60,4 +64,9 @@ To https://teben.hopto.org:9080/teben.hopto.org/git-playground.git
    3f93180..1d9a03c  1.1-SNAPSHOT -> 1.1-SNAPSHOT
 Branch '1.1-SNAPSHOT' set up to track remote branch '1.1-SNAPSHOT' from 'origin'.
 obama@teben:~/tmp/gitplayground$ 
+```
+
+Once this is done You can push the regular way:
+```bash
+
 ```
