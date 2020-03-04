@@ -3,5 +3,6 @@ my-app/target/
 .vscode/
 .classpath
 .project
+*.log
 
 
