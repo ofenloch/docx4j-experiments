@@ -86,3 +86,22 @@ To https://teben.hopto.org:9080/teben.hopto.org/git-playground.git
    2e48768..b7e7cd0  1.1-SNAPSHOT -> 1.1-SNAPSHOT
 obama@teben:~/tmp/gitplayground$ 
 ```
+
+
+I just `pull`ed in this branch ('1.1-SNAPSHOT'):
+
+```bash
+obama@teben:~/tmp/gitplayground$ git pull
+remote: Enumerating objects: 59, done.
+remote: Counting objects: 100% (59/59), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 47 (delta 14), reused 45 (delta 13)
+Unpacking objects: 100% (47/47), done.
+From https://teben.hopto.org:9080/teben.hopto.org/git-playground
+ * [new branch]      hansi      -> origin/hansi
+   b85d722..8bbb541  master     -> origin/master
+Already up to date.
+obama@teben:~/tmp/gitplayground$
+```
+
+As you can see, I pulled the new branch 'hansi'.
